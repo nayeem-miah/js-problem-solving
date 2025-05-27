@@ -56,6 +56,26 @@ const quote = `React is the most popular framework & thi framework is most`;
 console.log(quote.replace(/framework/g, "library")); //React is the most popular library & thi library is most
 
 
+// problem 7--> log values with variable names smartly
+const library1 = "JQaery"; 
+const library2 = "React";
+
+console.log(`library1  - ${library1}`); //library1  - JQaery
+console.log(`library2 - ${library2}`); //library2-2 - React
+
+// we can do this
+console.log({ library1 });  // { library1: 'JQaery' }
 
 
+// problem 8 -------> know performance of tasks
 
+const startTime = performance.now();
+
+for (let i = 0; i < 100; i++) {
+    console.log(i)
+    
+}
+
+const endTime = performance.now();
+
+console.log(`loop took ${endTime - startTime} millisecond to finished`);
